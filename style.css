@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(./images/fundo-mario.jpg);
+    background-size: cover;
+    background-repeat:space;
+    background-position: center center;
+}
+
+.game-board {
+    z-index: 0;
+    background: linear-gradient(#87CEEB, rgb(223, 234, 255));
+    width: 80%;
+    height: 500px;
+    border-radius: 5px 5px 0px 0px;
+    margin: 5% 0% 0% 10.5%;
+    position: relative;
+    overflow: hidden;
+    border-bottom: 15px solid rgb(51, 255, 0);
+}
+
+.pipe {
+    position: absolute;
+    bottom: 0;
+    width: 80px;
+    animation: pipe-animation 1.5s infinite linear;
+    background: none;
+}
+
+.mario {
+    width: 150px;
+    position: absolute;
+    bottom: 0;
+    background: none;
+}
+
+.jump {
+    animation: jump 500ms ease-out;
+}
+
+.clouds {
+    position: absolute;
+    width: 500px;
+    animation: cloudsAnimation 20s infinite linear;
+}
+
+#game-over {
+    font-family: 'LVDC Game over 2' , sans-serif;
+    word-spacing: 3px;
+    font-size: 3rem;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+@keyframes cloudsAnimation {
+    from {
+        right: -500px;
+    }
+    to {
+        right: 100%;
+    }
+}
+
+@keyframes pipe-animation {
+    from {
+        right: 0;
+    }
+
+    to {
+        right: 100%;
+    }
+}
+
+@keyframes jump {
+    0% {
+        bottom: 0;
+    }
+    40% {
+        bottom: 180px;
+    }
+    50% {
+        bottom: 180px;
+    }
+    60% {
+        bottom: 180px;
+    }
+    100% {
+        bottom: 0;
+    }
+}

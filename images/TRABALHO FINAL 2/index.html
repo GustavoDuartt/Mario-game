@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalho</title>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
+    <a class="whatsapp-link" href="#" target="_blank" title="Fale conosco">
+        <i class="fa fa-whatsapp"></i>
+    </a>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container-logo">
+        <a href="index.html"><img src="img/logo_pizzaria.png" alt="logo pizzaria"></a>
+    </div>
+    <header>
+        <nav>
+            <ul class="under-list">
+                <li><a href="#cardapio">Cardápio</a></li>
+                <li><a href="#formulario">Fazer Pedido</a></li>
+                <li><a href="equipe/equipe.html">Nossa Equipe</a></li>
+                <li><a href="equipe/equipe.html#sobreNos">Sobre Nós</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="slider">
+
+        <div class="slides">
+
+            <input type="radio" name="radio-btn" id="radio1" alt="posição 1">
+            <input type="radio" name="radio-btn" id="radio2" alt="posição 2">
+            <input type="radio" name="radio-btn" id="radio3" alt="posição 3">
+
+            <div class="slide first">
+                <img src="https://images.squarespace-cdn.com/content/v1/52d58a59e4b0f9fd2aeedd3e/1513285557233-JF1PYUENX31H36L96M1J/pizza.jpg" alt="pizza1">
+            </div>
+            <div class="slide">
+                <img src="https://www.saboravida.com.br/wp-content/uploads/2017/04/pizza-1.jpg" alt="pizza2">
+            </div>
+            <div class="slide">
+                <img src="img/pizza3.jpg" alt="pizza3">
+            </div>
+
+            <div class="navigation-auto">
+                <div class="auto-btn1" alt="posição 1"></div>
+                <div class="auto-btn2" alt="posição 2"></div>
+                <div class="auto-btn3" alt="posição 3"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="manual-navigation">
+        <label for="radio1" class="manual-btn" alt="posição 1"></label>
+        <label for="radio2" class="manual-btn" alt="posição 2"></label>
+        <label for="radio3" class="manual-btn" alt="posição 3"></label>
+    </div>
+
+    <div class="container">
+        <div class="linha">
+            <div class="circulo"></div>
+        </div>
+    </div>
+
+    <main id="cardapio">
+        <h1>CARDÁPIO</h1>
+        <div class="container-cards-one">
+
+            <div class="cards-one">
+                <div class="cards-inner">
+                    <div class="cards-front">
+                        <img class="pizza carne seca" src="img/carne_seca-removebg-preview.png" width="200px"
+                            height="200px" alt="pizza carne seca">
+                        <p class="nome-pizza">Carne Seca</p>
+                        <p>R$42,00</p>
+                    </div>
+                    <div class="cards-back">
+                        <ul id="ing">
+                            <li>Carne Seca Desfiada</li>
+                            <li>Mussarela</li>
+                            <li>Catupiry</li>
+                            <li>Molho de Tomate</li>
+                            <li>Orégano</li>
+                        </ul>
+                        <div class="container-button">
+                            <button id="botao" onclick="preencher('1 pizza de Carne Seca')">Comprar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cards-one">
+                <div class="cards-inner">
+                    <div class="cards-front">
+                        <img class="pizza portuguesa" src="img/pizza_portuguesa-removebg-preview.png"
+                            alt="pizza portuguesa" width="200px" height="200px">
+                        <p class="nome-pizza">Portuguesa</p>
+                        <p>R$42,00</p>
+                    </div>
+                    <div class="cards-back">
+                        <ul id="ing">
+                            <li>Mussarela</li>
+                            <li>Presunto</li>
+                            <li>Pimentão</li>
+                            <li>Cebola</li>
+                            <li>Ovos</li>
+                            <li>Azeitona</li>
+                            <li>Molho de Tomate</li>
+                            <li>Orégano</li>
+                        </ul>
+                        <div class="container-button">
+                            <button id="botao" onclick="preencher('1 Pizza Portuguesa')">Comprar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cards-one">
+                <div class="cards-inner">
+                    <div class="cards-front">
+                        <img class="pizza frango com catupiry" src="img/pizza-frango-com-catupiry-removebg-preview.png"
+                            width="200px" height="200px" alt="pizza frango com catupiry">
+                        <p class="nome-pizza">Frango com Catupiry</p>
+                        <p>R$42,00</p>
+                    </div>
+                    <div class="cards-back">
+                        <ul id="ing">
+                            <li>Mussarela</li>
+                            <li>Frango Desfiado</li>
+                            <li>Catupiry</li>
+                            <li>Molho de Tomate</li>
+                            <li>Orégano</li>
+                        </ul>
+                        <div class="container-button">
+                            <button id="botao" onclick="preencher('1 pizza de Frango com Catupiry')">Comprar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-cards-one">
+
+            <div class="cards-one">
+                <div class="cards-inner">
+                    <div class="cards-front">
+                        <img class="pizza calabresa" src="img/pizza_calabresa-removebg-preview.png" width="200px"
+                            height="200px" alt="pizza calabresa">
+                        <p class="nome-pizza">Calabresa</p>
+                        <p>R$42,00</p>
+                    </div>
+                    <div class="cards-back">
+                        <ul id="ing">
+                            <li>Mussarela</li>
+                            <li>Calabresa</li>
+                            <li>Cebola</li>
+                            <li>Molho de Tomate</li>
+                            <li>Orégano</li>
+                        </ul>
+                        <div class="container-button">
+                            <button id="botao" onclick="preencher('1 Pizza de calabresa')" >Comprar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cards-one">
+                <div class="cards-inner">
+                    <div class="cards-front">
+                        <img class="pizza pepperoni" src="img/pizza_pepperoni-removebg-preview.png" width="200px"
+                            height="200px" alt="pizza pepperoni">
+                        <p class="nome-pizza">Pepperoni</p>
+                        <p>R$42,00</p>
+                    </div>
+                    <div class="cards-back">
+                        <ul id="ing">
+                            <li>Mussarela</li>
+                            <li>Pepperoni</li>
+                            <li>Carne de Porco</li>
+                            <li>Orégano</li>
+                        </ul>
+                        <div class="container-button">
+                            <button id="botao" onclick="preencher('1 Pizza de Pepperoni')">Comprar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cards-one">
+                <div class="cards-inner">
+                    <div class="cards-front">
+                        <img class="pizza marguerita" src="img/pizza_marguerita-removebg-preview.png" width="200px"
+                            height="200px" alt="pizza marguerita">
+                        <p class="nome-pizza">Marguerita</p>
+                        <p>R$42,00</p>
+                    </div>
+                    <div class="cards-back">
+                        <ul id="ing">
+                            <li>Mussarela</li>
+                            <li>Tomate</li>
+                            <li>Manjericão</li>
+                            <li>Parmesão</li>
+                            <li>Orégano</li>
+                        </ul>
+                        <div class="container-button">
+                            <button id="botao" onclick="preencher('1 Pizza de Marguerita')">Comprar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="container-cards-one">
+
+            <div class="cards-one">
+                <div class="cards-inner">
+                    <div class="cards-front">
+                        <img class="pizza chocolate com morango"
+                            src="img/Pizza_Chocolate_com_morango-removebg-preview.png" width="200px" height="200px"
+                            alt="pizza chocolate com morango">
+                        <p class="nome-pizza">Chocolate com Morango</p>
+                        <p>R$40,00</p>
+                    </div>
+                    <div class="cards-back">
+                        <ul id="ing">
+                            <li>Chocolate</li>
+                            <li>Morango</li>
+                            <li>Creme de Leite</li>
+                            <li>Licor de Chocolate</li>
+                        </ul>
+                        <div class="container-button">
+                            <button id="botao" onclick="preencher('1 Pizza de Chocolate com Morango')">Comprar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cards-one">
+                <div class="cards-inner">
+                    <div class="cards-front">
+                        <img class="pizza chocolate" src="img/pizza_de_chocolate-removebg-preview.png" width="200px"
+                            height="200px" alt="pizza chocolate">
+                        <p class="nome-pizza">Chocolate</p>
+                        <p>R$40,00</p>
+                    </div>
+                    <div class="cards-back">
+                        <ul id="ing">
+                            <li>Chocolate</li>
+                            <li>Morango</li>
+                            <li>Creme de Leite</li>
+                            <li>Licor de Chocolate</li>
+                        </ul>
+                        <div class="container-button">
+                            <button id="botao" onclick="preencher('1 pizza de chocolate')" >Comprar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cards-one">
+                <div class="cards-inner">
+                    <div class="cards-front">
+                        <img class="pizza chocolate com banana"
+                            src="img/pizza_de_chocolate_com_banana-removebg-preview.png" width="200px" height="200px"
+                            alt="pizza chocolate com banana">
+                        <p class="nome-pizza">Chocolate com Banana</p>
+                        <p>R$40,00</p>
+                    </div>
+                    <div class="cards-back">
+                        <ul id="ing">
+                            <li>Chocolate</li>
+                            <li>Creme de Leite</li>
+                            <li>Banana</li>
+                            <li>Licor de Chocolate</li>
+                        </ul>
+                        <div class="container-button">
+                            <button id="botao" onclick="preencher('1 pizza de Chocolate com Banana')">Comprar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="formulario" id="formulario" >
+            <p>FAÇA SEU PEDIDO:</p>
+            <form action="mailto:bruno.hsl.077@gmail.com" method="post" enctype="text/plain" id="form" alt="formulario">
+              <input name="nome" id="nome" type="text" placeholder="Nome" alt="Informe seu nome" required/>
+              <input name="assunto" placeholder="telefone" alt="Informe seu telefone" required/><br/>
+              <input name="assunto" placeholder="Endereço" alt="Informe seu endereço" required/><br/>
+              <textarea name="mensagem" id="sabor" placeholder="Sabor" rows="5" required></textarea><br>
+                <div class="checks">
+                  <h4>FORMA DE PAGAMENTO</h4>
+                  <div class="check">
+                    <p>Dinheiro</p>
+                    <input type="radio" name="assunto" placeholder="metodo de pagamento" required/><br>
+                  </div>
+
+                  <div class="check">
+                    <p>Cartão</p>
+                <input type="radio" name="assunto" placeholder="metodo de pagamento" required/><br>
+                  </div>
+
+                  <div class="check">
+                    <p>Pix</p>
+                    <input type="radio" name="assunto" placeholder="metodo de pagamento" required/><br>
+                  </div>
+              </div>
+              <input type="submit" value="Confirmar pedido"/>
+            </form>
+        </div>
+        <section class="secaodepoimentos">
+            <h2>DEPOIMENTOS</h2>
+            <div class="depoimentos">
+                <div class="depoimento">
+                    <img class="usuario" src="img/pessoa1.jpeg" alt="pessoa Luzia">
+                    <h3>Luzia</h3>
+                    <div class="estrelas">
+                        <img src="img/estrela.png" alt="">
+                        <img src="img/estrela.png" alt="Estrela">
+                        <img src="img/estrela.png" alt="Estrela">
+                        <img src="img/estrela.png" alt="Estrela">
+                        <img src="img/estrela.png" alt="Estrela">
+                    </div>
+                    <p>Adorei a experiência na sua pizzaria! A pizza estava deliciosa, com uma massa fina e
+                        crocante,
+                        ingredientes frescos e um sabor incrível. Com certeza voltarei!</p>
+                </div>
+                <div class="depoimento">
+                    <img class="usuario" src="img/pessoa2.jpeg" alt="Pessoa Joana">
+                    <h3>Joana</h3>
+                    <div class="estrelas">
+                        <img src="img/estrela.png" alt="Estrela">
+                        <img src="img/estrela.png" alt="Estrela">
+                        <img src="img/estrela.png" alt="Estrela">
+                        <img src="img/estrela.png" alt="Estrela">
+                        <img src="img/estrela.png" alt="Estrela">
+                    </div>
+                    <p>A ambientação da pizzaria é aconchegante e acolhedora. O ambiente é bem decorado e tem uma
+                        atmosfera
+                        descontraída. Foi um prazer desfrutar da minha pizza em um lugar tão agradável.</p>
+                </div>
+                <div class="depoimento">
+                    <img class="usuario" src="img/pessoa3.jpeg" alt="Pessoa Pedro">
+                    <h3>Pedro</h3>
+                    <div class="estrelas">
+                        <img src="img/estrela.png" alt="Estrela">
+                        <img src="img/estrela.png" alt="Estrela">
+                        <img src="img/estrela.png" alt="Estrela">
+                        <img src="img/estrela.png" alt="Estrela">
+                        <img src="img/estrela.png" alt="Estrela">
+                    </div>
+                    <p>Fui recebido com um sorriso caloroso e o atendimento foi excelente. Eles responderam a todas
+                        as minhas
+                        perguntas sobre os sabores das pizzas e me ajudaram a fazer uma ótima escolha. O serviço foi
+                        rápido e
+                        eficiente. Parabéns pela equipe incrível!</p>
+                </div>
+                <div class="depoimento">
+                    <img class="usuario" src="img/pessoa4.jpg" alt="Pessoa Maria">
+                    <h3>Maria</h3>
+                    <div class="estrelas">
+                        <img src="img/estrela.png" alt="Estrela">
+                        <img src="img/estrela.png" alt="Estrela">
+                        <img src="img/estrela.png" alt="Estrela">
+                        <img src="img/estrela.png" alt="Estrela">
+                        <img src="img/estrela.png" alt="Estrela">
+                    </div>
+                    <p>A sua pizzaria se destaca não apenas pelo incrível sabor das pizzas, mas também pela atenção
+                        dada aos
+                        detalhes. A apresentação das pizzas é impecável, com uma combinação perfeita de cores e
+                        ingredientes
+                        frescos. </p>
+                </div>
+                <div class="depoimento">
+                    <img class="usuario" src="img/pessoa5.jpg" alt="Pessoa Eduardo">
+                    <h3>Eduardo</h3>
+                    <div class="estrelas">
+                        <img src="img/estrela.png" alt="Estrela">
+                        <img src="img/estrela.png" alt="Estrela">
+                        <img src="img/estrela.png" alt="Estrela">
+                        <img src="img/estrela.png" alt="Estrela">
+                        <img src="img/estrela.png" alt="Estrela">
+                    </div>
+                    <p>Além da qualidade das pizzas, fiquei impressionado com a rapidez na entrega. Fiz um pedido
+                        para entrega
+                        em casa e a pizza chegou quentinha e dentro do prazo estimado. Isso mostra o comprometimento
+                        da sua
+                        pizzaria em proporcionar uma excelente experiência.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    </main>
+    <footer>
+        <div class="rodape">
+            <div class="colunas">
+                <div class="coluna">
+                    <h4>CONTATOS</h4>
+                    <p>40028922</p>
+                    <p>pizzas.ads@gmail.com</p>
+                    <p> qoieb9 ecyvc piwvy pwiebvybvg9dc</p>
+                </div>
+                <div class="coluna">
+                    <h4>REDES SOCIAIS</h4>
+                    <div class="contatorodape">
+                        <img src="img/facebook.png" alt="logo facebook">
+                        <p>facebook</p>
+                    </div>
+                    <div class="contatorodape">
+                        <img src="img/instagram.png" alt="logo instagram">
+                        <p>instagram</p>
+                    </div>
+
+                </div>
+                <div class="coluna">
+                    <h4>LINKS</h4>
+                    <a href="https://www.flaticon.com/br/icones-gratis/facebook" title="facebook ícones"> ícones criados
+                        por - Flaticon</a>
+                </div>
+                <div class="coluna">
+                    <h4>GOOGLE MAPS</h4>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3838.8849147358665!2d-48.127861425207236!3d-15.810021184832506!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935bcc64ba8942e9%3A0x79640388ffba5890!2sCentro%20Universit%C3%A1rio%20IESB%20-%20Campus%20Ceil%C3%A2ndia!5e0!3m2!1spt-BR!2sbr!4v1685636252881!5m2!1spt-BR!2sbr"
+                        width="290" height="140" style="border-radius: 10px;" style="border:0;" allowfullscreen=""
+                        loading="lazy" referrerpolicy="no-referrer-when-downgrade" alt="localização da pizzaria"></iframe>
+                </div>
+            </div>
+            <div class="copy">
+                <p>©Copyright: 2023 trabalho análise e desenvolvimento de sistemas</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
