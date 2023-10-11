@@ -23,12 +23,51 @@ body {
     border-bottom: 15px solid rgb(51, 255, 0);
 }
 
+.botoes {
+    display: flex;
+    justify-content: center;
+    margin-top: 10%;
+    height: 20%;
+}
+
+.score {
+    display: flex;
+    justify-content: right;
+    padding: 2%;
+    font-family: 'LVDC Game over 2' , sans-serif;
+    font-size: 20px;
+    letter-spacing: 1px;
+    position: relative;
+    z-index: 101;
+}
+
+.score b {
+    margin-left: 2%;
+}
+
+.meuBotao {
+    position: relative;
+    width: 40%;
+    height: 100%;
+    border: solid 8px rgb(0, 0, 0);
+    padding: 2%;
+    background: rgb(252, 255, 49);
+    outline: none;
+    font-size: 30px;
+    letter-spacing: 7px;
+    border-style:dashed;
+    font-family: 'LVDC Game over 2' , sans-serif;
+    color: rgb(0, 0, 0);
+}
+
+
 .pipe {
     position: absolute;
     bottom: 0;
     width: 80px;
     animation: pipe-animation 1.5s infinite linear;
     background: none;
+    animation-play-state: paused;
 }
 
 .mario {
@@ -40,24 +79,28 @@ body {
 
 .jump {
     animation: jump 500ms ease-out;
+    animation-play-state: paused;
 }
 
 .clouds {
+    top: 0;
     position: absolute;
     width: 500px;
     animation: cloudsAnimation 20s infinite linear;
+    position: absolute;
+    z-index: 100;
 }
 
 #game-over {
     font-family: 'LVDC Game over 2' , sans-serif;
-    word-spacing: 3px;
-    font-size: 3rem;
+    letter-spacing: 3px;
+    font-size: 2.5rem;
     width: 100%;
     height: 100%;
     display: flex;
     justify-content: center;
-    align-items: center;
     display: none;
+    z-index: 1000;
 }
 
 @keyframes cloudsAnimation {
@@ -81,7 +124,7 @@ body {
 
 @keyframes jump {
     0% {
-        bottom: 0;
+        bottom: 20px;
     }
     40% {
         bottom: 180px;
