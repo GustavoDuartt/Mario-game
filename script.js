@@ -14,7 +14,7 @@ const score = document.querySelector('.score');
 let playerScore = "";
 let gameIsOver = false;
 
-  function scoreCounter() {
+  const scoreCounter = ()  => {
     if (!gameIsOver) {
       playerScore++;
       score.innerHTML = `Score <b>${playerScore}</b>`;
@@ -23,7 +23,7 @@ let gameIsOver = false;
 
   const interval = 300;
 
-  Interval = setInterval(scoreCounter(), interval);
+  Interval = setInterval(scoreCounter, interval);
 
 const loop = setInterval(() => {
 
