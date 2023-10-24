@@ -14,7 +14,7 @@ const score = document.querySelector('.score');
 let playerScore = "";
 let gameIsOver = false;
 
-  const scoreCounter = () => {
+  function scoreCounter() {
     if (!gameIsOver) {
       playerScore++;
       score.innerHTML = `Score <b>${playerScore}</b>`;
