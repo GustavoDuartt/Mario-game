@@ -23,7 +23,7 @@ let gameIsOver = false;
 
   const interval = 300;
 
-  Interval = setInterval(scoreCounter, interval);
+  Interval = setInterval(scoreCounter(), interval);
 
 const loop = setInterval(() => {
 
